@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday, Vince!</title>
+  <style>
+    body {
+      background: #fff0f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #e91e63;
+      font-size: 3em;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      color: white;
+      background-color: #ff4081;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #f50057;
+    }
+    #message {
+      margin-top: 40px;
+      font-size: 20px;
+      color: #4caf50;
+      display: none;
+      line-height: 1.6;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .heart {
+      color: red;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 Happy Birthday, Vince! 🎉</h1>
+  <p>Click the button below to reveal your surprise message 💌</p>
+  <button onclick="revealMessage()">Click Me!</button>
+
+  <div id="message">
+    <p><strong>To my ray of sunshine,</strong></p>
+    <p>
+      Happy happy birthday! With your special day today, I hope you receive and feel all the love that you deserve from all the people around you.
+    </p>
+    <p>
+      Thank you for coming into my life, that even though we just met a few weeks ago, you've made a difference to my life already.
+    </p>
+    <p>
+      I want to see you grow more each day. I want to celebrate more birthdays of yours in the coming years.
+    </p>
+    <p>
+      I hope you enjoy your day, my Vince. <strong>Mahal kita!</strong> <span class="heart">❤️</span>
+    </p>
+  </div>
+
+  <!-- Background music from YouTube, autoplaying and looping -->
+  <iframe style="display:none;" width="0" height="0"
+    src="https://www.youtube.com/embed/n84ThPToA-A?autoplay=1&loop=1&playlist=n84ThPToA-A"
+    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+  </iframe>
+
+  <script>
+    function revealMessage() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
